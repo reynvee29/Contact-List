@@ -1,7 +1,11 @@
 
-<input type="text" [(ngModel)]="title" name="title" placeholder="Title..">
-<textarea [(ngModel)]="content" name="content" placeholder="Content.."></textarea>
-<input type="submit" value="Add a Post" (click)="addPost()">
+<input type="text" [(ngModel)]="Firstname" name="firstname" placeholder="Enter First Name" maxlength="30px"><br>
+<input type="text" [(ngModel)]="Lastname" name="lastname" placeholder="Enter Last Name" maxlength="30px"><br>
+<input type="text" [(ngModel)]="Phone" name="phone" placeholder="Enter Phone Number" maxlength="30px"><br>
+<input type="text" [(ngModel)]="Mobile" name="mobile" placeholder="Enter Mobile Number" maxlength="30px"><br>
+<input type="text" [(ngModel)]="Email" name="email" placeholder="Enter Email" maxlength="30px"><br>
+<input type="text" [(ngModel)]="Password" name="password" placeholder="Enter Password" maxlength="30px"><br>
+<input type="submit" value="Submit" (click)="addPost()">
 
 
 <ul *ngFor="let post of posts | async">

@@ -7,6 +7,8 @@ interface Post {
   title: string;
   content: string;
 }
+
+
 interface PostId extends Post {
   id: string;
 }
@@ -45,7 +47,7 @@ export class AppComponent {
   }
 
   addPost() {
-    this.afs.collection('posts').add({'title': this.title, 'content': this.content});
+    this.afs.collection('posts').add({'title': this.title, 'content': this.content,});
   }
 
   getPost(postId) {
